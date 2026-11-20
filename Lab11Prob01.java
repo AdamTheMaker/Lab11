@@ -17,12 +17,17 @@ public class Lab11Prob01 {
 				DataOutputStream output = new DataOutputStream(new FileOutputStream("src/people-copy.dat"));
 			) 
 		{
+			int age = 0;
+			String name = "";
+			String address = "";
+			int zip = 0;
+			double salary = 0.0;
 			while (true) {
-				int age = input.readInt();
-				String name = input.readUTF();
-				String address = input.readUTF();
-				int zip = input.readInt();
-				double salary = input.readDouble();
+				age = input.readInt();
+				name = input.readUTF();
+				address = input.readUTF();
+				zip = input.readInt();
+				salary = input.readDouble();
 				
 				output.writeInt(age);
 				output.writeUTF(name);
