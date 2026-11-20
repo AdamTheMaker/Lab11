@@ -29,7 +29,8 @@ public class Lab11Prob01 {
 				output.writeUTF(address);
 				output.writeInt(zip);
 				output.writeDouble(salary);
-				System.out.printf("Age: %d\nFirst and Last Name: %s\nAddress: %s\nZip Code: %s\nSalary: %f\n", age, name, address, zip, salary);
+				// System.out.printf("Age: %d\nFirst and Last Name: %s\nAddress: %s\nZip Code: %s\nSalary: %f", age, name, address, zip, salary);
+				System.out.printf("%d %s %s %s %.2f\n", age, name, address, zip, salary);
 			}
 		} catch (EOFException ex) {
 			ex.printStackTrace();
